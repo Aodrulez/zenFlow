@@ -1,0 +1,123 @@
+// Copyright (c) 2022 The ZMK Contributors
+// SPDX-License-Identifier: MIT
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+// Home row mods macro
+// #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &kp k4
+// #define HRMR(k1,k2,k3,k4) &kp k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+
+/ {
+    behaviors {
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <1 2>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <2 3>;
+        };
+
+        selectAll {
+            bindings = <&kp LC(A)>;
+            key-positions = <1 0>;
+        };
+
+        shiftDelete {
+            bindings = <&kp LS(DELETE)>;
+            key-positions = <20 21>;
+        };
+
+        enterGameMode {
+            bindings = <&tog 4>;
+            key-positions = <28 29>;
+        };
+
+        typeEmail {
+            bindings = <&email>;
+            key-positions = <27 28>;
+        };
+    };
+
+    macros {
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp L &kp DOT &kp A &kp T &kp U &kp L &kp A &kp L &kp E &kp X &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&ht LALT Q  &kp W  &kp F  &kp P      &kp B               &kp J            &kp L       &kp U      &kp Y    &ht LEFT_GUI SEMI
+&kp A       &kp R  &kp S  &kp T      &kp G               &kp M            &kp N       &kp E      &kp I    &kp O
+&kp Z       &kp X  &kp C  &kp D      &kp V               &kp K            &kp H       &kp COMMA  &kp DOT  &kp FSLH
+                          &lt 2 TAB  &mt LSHIFT ENTER    &mt LCTRL SPACE  &lt 1 BSPC
+            >;
+        };
+
+        right_layer {
+            bindings = <
+&kp INS     &kp N1  &kp N2  &kp N3  &trans               &kp HOME          &trans          &kp UP_ARROW    &trans           &kp COLON
+&kp DEL     &kp N4  &kp N5  &kp N6  &kp DOUBLE_QUOTES    &kp SINGLE_QUOTE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMI
+&caps_word  &kp N7  &kp N8  &kp N9  &kp N0               &trans            &trans          &trans          &trans           &trans
+                            &trans  &kp ESC              &trans            &trans
+            >;
+        };
+
+        left_layer {
+            bindings = <
+&kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp LBRC  &kp RIGHT_BRACE    &kp CARET  &kp LPAR   &kp RPAR   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp EXCL   &kp AT         &kp HASH          &kp DLLR  &kp PRCNT          &kp ASTRK  &kp MINUS  &kp PLUS   &kp BSLH          &kp QMARK
+&kp F1     &kp F2         &kp F3            &kp F4    &kp F5             &kp AMPS   &kp UNDER  &kp EQUAL  &kp PIPE          &trans
+                                            &trans    &trans             &trans     &trans
+            >;
+        };
+
+        tri_layer {
+            bindings = <
+&sys_reset   &trans  &trans  &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &sys_reset
+&bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
+&trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
+                             &trans      &trans          &trans  &trans
+            >;
+        };
+
+        Game {
+            bindings = <
+&mt TAB ESCAPE    &kp Q  &kp W  &kp E    &kp R        &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D    &kp F        &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C    &kp V        &trans  &trans  &trans  &trans  &trans
+                                &mt G B  &kp SPACE    &trans  &trans
+            >;
+        };
+    };
+};
