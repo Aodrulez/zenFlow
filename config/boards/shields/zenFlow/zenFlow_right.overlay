@@ -1,4 +1,4 @@
-#include "zenSplit.dtsi"
+#include "zenFlow.dtsi"
 
 &default_transform {
     col-offset = <5>;
