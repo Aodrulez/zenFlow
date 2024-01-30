@@ -1,11 +1,11 @@
 file_format: "1"
-id: zenSplit
-name: zenSplit
+id: zenFlow
+name: zenFlow
 type: shield
-url: https://github.com/Aodrulez/zenSplit
+url: https://github.com/Aodrulez/zenFlow
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - zenSplit_left
-  - zenSplit_right
+  - zenFlow_left
+  - zenFlow_right
