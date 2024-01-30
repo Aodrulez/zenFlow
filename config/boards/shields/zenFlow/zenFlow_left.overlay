@@ -1,4 +1,4 @@
-#include "zenSplit.dtsi"
+#include "zenFlow.dtsi"
 
 &kscan0 {
     diode-direction = "col2row";
