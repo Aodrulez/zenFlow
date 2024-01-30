@@ -1,5 +1,5 @@
-config SHIELD_ZENSPLIT_LEFT
-    def_bool $(shields_list_contains,zenSplit_left)
+config SHIELD_ZENFLOW_LEFT
+    def_bool $(shields_list_contains,zenFlow_left)
 
-config SHIELD_ZENSPLIT_RIGHT
-    def_bool $(shields_list_contains,zenSplit_right)
+config SHIELD_ZENFLOW_RIGHT
+    def_bool $(shields_list_contains,zenFlow_right)
