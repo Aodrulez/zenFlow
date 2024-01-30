@@ -1,15 +1,15 @@
 
-if SHIELD_ZENSPLIT_LEFT
+if SHIELD_ZENFLOW_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "The ZenSplit"
+    default "The ZenFlow"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_ZENSPLIT_LEFT || SHIELD_ZENSPLIT_RIGHT
+if SHIELD_ZENFLOW_LEFT || SHIELD_ZENFLOW_RIGHT
 config ZMK_SPLIT
     default y
 endif
