@@ -1,0 +1,11 @@
+file_format: "1"
+id: zenSplit
+name: zenSplit
+type: shield
+url: https://github.com/Aodrulez/zenSplit
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - zenSplit_left
+  - zenSplit_right
