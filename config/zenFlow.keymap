@@ -49,7 +49,7 @@
 			bindings = <&caps_word>;
 		};
 		combo_bt  {
-			timeout-ms = <10>;
+			timeout-ms = <20>;
 			key-positions = <10 12>;
 			bindings = <&to BT>;
 			layers = <SM1>; 
