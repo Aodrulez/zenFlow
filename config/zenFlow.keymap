@@ -49,9 +49,10 @@
 			bindings = <&caps_word>;
 		};
 		combo_bt  {
-			
-			key-positions = <33 30>;
+			timeout-ms = <30>;
+			key-positions = <10 12>;
 			bindings = <&to BT>;
+			layers = <SM1>; 
 			 
 		};
 		lalt {
