@@ -247,7 +247,7 @@
 
 		sys {
 			bindings = <
-							&mkp LCLK		&mmv MOVE_UP		&mkp RCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
+							&mkp RCLK		&mmv MOVE_UP		&mkp LCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
 				&td HOME DEL		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp LEFT		&kp DOWN	&kp RIGHT	&kp RET
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
