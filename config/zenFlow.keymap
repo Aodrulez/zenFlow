@@ -256,7 +256,8 @@
 				&td HOME DEL		&kp LEFT		&kp DOWN		&kp RIGHT		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp RET
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
-*/		};
+		};
+*/
 
 		sys {
 			bindings = <
