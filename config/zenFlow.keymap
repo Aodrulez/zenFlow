@@ -13,7 +13,7 @@
 
 #define U_MOUSE_MOVE_MAX 1400
 &mmv {
-	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+	time-to-max-speed-ms = <300>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
 
@@ -212,9 +212,9 @@
 
 		alpha1 {
 			bindings = <
-								&hm_l LCTL L	&hm_l LALT G	&hm_l LGUI D		&hm_r RGUI H	&hm_r RALT U	&hm_r RCTL O	  
-				&hl_l NM1 I		&hl_l SM2 S		&hl_l SM1 R		&hl_l SYS T			&hl_r SYS N		&hl_r SM1 E		&hl_r SM2 A		&hl_r NM1 C
-								&mt LC(LS(LALT)) SPC			&mt LSHIFT ENTER		&key_repeat	    &sl AL2
+							&hm_l LCTL L		&hm_l LALT G		&hm_l LGUI D		&hm_r RGUI H	&hm_r RALT U	&hm_r RCTL O	  
+				&hl_l NM1 I		&hl_l SM2 S		&hl_l SM1 R		&hl_l SYS T		&hl_r SYS N	&hl_r SM1 E	&hl_r SM2 A	&hl_r NM1 C
+							&key_repeat		&mt LSHIFT ENTER	&mt LC(LS(LALT)) SPC	&sl AL2
 			>;
 		};
 
