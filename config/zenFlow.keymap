@@ -252,12 +252,20 @@
 
 		sys {
 			bindings = <
+							&mkp RCLK		&kp UP			&mkp LCLK		&td LC(V) LC(C)		&mmv MOVE_UP		&td Q BKSP
+				&td HOME DEL		&kp LEFT		&kp DOWN		&kp RIGHT		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp RET
+										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
+			>;
+		};
+
+/*		sys {
+			bindings = <
 							&mkp RCLK		&mmv MOVE_UP		&mkp LCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
 				&td HOME DEL		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp LEFT		&kp DOWN	&kp RIGHT	&kp RET
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
 		};
-
+*/
 		bt {
 			bindings = <
 						 &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	        &none	    &none	&none
