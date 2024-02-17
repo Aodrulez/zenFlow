@@ -11,11 +11,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-
+/*
 #define U_MOUSE_MOVE_MAX 1400
 &mmv {
-	time-to-max-speed-ms = <150>;             /* <--- How long time until max speed is reached (default: 500) */
+	time-to-max-speed-ms = <150>;             
 };
+*/
 
 
 &mt {
