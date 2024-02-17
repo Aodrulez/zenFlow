@@ -253,8 +253,8 @@
 /*
 		sys {
 			bindings = <
-							&mkp RCLK		&kp UP			&mkp LCLK		&td LC(V) LC(C)		&mmv MOVE_UP		&td Q BKSP
-				&td HOME DEL		&kp LEFT		&kp DOWN		&kp RIGHT		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp RET
+							&mkp RCLK		&mmv MOVE_UP		&mkp LCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
+				&td HOME DEL		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp LEFT		&kp DOWN	&kp RIGHT	&kp RET
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
 		};
@@ -262,8 +262,8 @@
 
 		sys {
 			bindings = <
-							&mkp RCLK		&mmv MOVE_UP		&mkp LCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
-				&td HOME DEL		&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&kp LEFT		&kp DOWN	&kp RIGHT	&kp RET
+							&trans		&trans		&trans		&td LC(V) LC(C)		&kp UP		&td Q BKSP
+				&td HOME DEL		&trans		&trans		&trans		&kp LEFT		&kp DOWN	&kp RIGHT	&kp RET
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
 		};
