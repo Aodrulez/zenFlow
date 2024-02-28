@@ -1,27 +1,27 @@
 # mouse integration
-#manifest:
-#  remotes:
-#    - name: zmkfirmware
-#      url-base: https://github.com/zmkfirmware
-#    - name: caksoylar
-#      url-base: https://github.com/caksoylar
-#  projects:
-#    - name: zmk
-#      remote: caksoylar
-#      revision: feat/mouse-keys-3.2
-#      import: app/west.yml
-#  self:
-#    path: config
-    
-    
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: caksoylar
+      revision: feat/mouse-keys-3.2
       import: app/west.yml
   self:
     path: config
+    
+    
+#manifest:
+#  remotes:
+#    - name: zmkfirmware
+#      url-base: https://github.com/zmkfirmware
+#  projects:
+#    - name: zmk
+#      remote: zmkfirmware
+#      revision: main
+#      import: app/west.yml
+#  self:
+#    path: config
