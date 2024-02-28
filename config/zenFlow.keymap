@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <mouse.dtsi>
+
 
 /*
 #define U_MOUSE_MOVE_MAX 1400
