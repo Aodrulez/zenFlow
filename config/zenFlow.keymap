@@ -10,6 +10,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
+
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
+
+
 
 
 
