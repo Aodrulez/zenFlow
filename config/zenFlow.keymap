@@ -259,7 +259,7 @@
 							&kp LSHIFT	&kp EQUAL									&kp RCTL	&kp RGUI
 			>;
 		};
-/*
+
 		sys {
 			bindings = <
 							&mkp RCLK		&mmv MOVE_UP		&mkp LCLK		&td LC(V) LC(C)		&kp UP		&td Q BKSP
@@ -267,8 +267,8 @@
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
 		};
-*/
 
+/*
 		sys {
 			bindings = <
 							&trans		&trans		&trans		&td LC(V) LC(C)		&kp UP		&td Q BKSP
@@ -276,7 +276,7 @@
 										&kp LSHIFT		&kp LCTL		&kp RALT		&kp RGUI
 			>;
 		};
-
+*/
 		bt {
 			bindings = <
 						 &bt BT_SEL 0	 &bt BT_SEL 1	 &bt BT_SEL 2	        &none	    &none	&none
