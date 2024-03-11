@@ -1,0 +1,229 @@
+meta:
+  engine: 4.0.0
+  version: 1.0
+  auther: Atul Alex Cherian
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  # Achor in KiCAD PCB editor
+  ax:  155
+  ay: -152.5
+  
+points:
+  zones:
+    matrix:
+      # Fix placement on KiCAD sheet.
+      anchor:
+        shift: [ax, ay]
+      key:
+        padding: 1ky 
+        spread: 1kx 
+      columns:
+       pinky:
+        key:
+          width: 1.5kx
+          rotate: -90
+          pin: P8
+        rows:
+          top:
+            skip: true
+          home: 
+            skip: true
+       ring:
+        key:
+          stagger: -0.68ky
+          spread: 1kx - 0.5
+        rows:
+          top:
+            pin: P19
+          home:
+            pin: P7
+          bottom:
+            skip: true
+       middle:
+        rows:
+          top:
+            pin: P20
+          home:
+            pin: P6
+          bottom:
+            skip: true
+       index:
+        rows:
+          top:
+            pin: P21
+          home:
+            pin: P5
+          bottom:
+            skip: true
+      rows:
+        bottom:
+        home:
+        top:
+    thumbs:
+      # Fix placement on KiCAD sheet.
+      anchor:
+        shift: [ax, ay]
+      key:
+        padding: 1ky 
+        spread: 1kx 
+        width: 1kx 
+      columns:
+        layer:
+          key:
+            pin: P15
+        space:
+          key:
+            pin: P14
+      rows:
+        cluster:
+          shift: [4kx, -1ky]
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  board:
+    - what: rectangle
+      operation: stack
+      size: [58, 109]
+      where:
+          ref: [matrix_pinky_bottom]
+          shift: [-2.5,45.3]
+      fillet: 3
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  zenFlow:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      jlc_order_number:
+        what: infused-kim/text
+        adjust:
+          ref:
+            - matrix_ring_home
+          shift: [2 kx, 0.53 ky]
+        params:
+          text: "JLCJLCJLCJLC"
+      choc_hotswap:
+        what: infused-kim/choc
+        where: true
+        params:
+          show_keycaps: true
+          solder: true
+          reverse: true
+          hotswap: true
+          from: "{{pin}}"
+          to: GND
+      nice_nano:
+        what: infused-kim/nice_nano_pretty
+        params:
+                traces: true
+                show_silk_labels: true
+                show_via_labels: false
+        where:
+          ref: matrix_index_top
+          shift: [27,-7.5]
+          rotate: 0
+      power_switch:
+        what: infused-kim/switch_power
+        where:
+          ref: matrix_index_top
+          shift: [43,2]
+          rotate: 0
+        params:
+          reverse: true
+          from: BAT_P
+      reset_button:
+        what: infused-kim/b3u1000p
+        where:
+          ref: matrix_index_top
+          shift: [43,-10]
+          rotate: 90
+        params:
+          reverse: true  
+          r1: RST
+          r2: GND
+      battery_pads:
+        what: infused-kim/bat
+        where:
+          ref: matrix_index_top
+          shift: [16.5 ,-26]
+        adjust:
+            rotate: 180
+        params:
+            pos: BAT_P
+            neg: GND
+      via_1:
+        what: via
+        adjust:
+          ref: matrix_ring_top
+          shift: [0, 2.7]
+        params:
+          net: P19 
+      via_2:
+        what: via
+        adjust:
+          ref: matrix_ring_top
+          shift: [18, 2.7]
+        params:
+          net: P20
+      via_3:
+        what: via
+        adjust:
+          ref: matrix_ring_top
+          shift: [36, 2.7]
+        params:
+          net: P21           
+      mounting_hole_1:
+        what: infused-kim/mounting_hole
+        adjust:
+          ref: matrix_ring_top
+          shift: [27, -8.5]
+      mounting_hole_2:
+        what: infused-kim/mounting_hole
+        adjust:
+          ref: matrix_ring_top
+          shift: [9, -8.5]
+      mounting_hole_3:
+        what: infused-kim/mounting_hole
+        adjust:
+          ref: matrix_ring_top
+          shift: [-7, -28]
+      mounting_hole_4:
+        what: infused-kim/mounting_hole
+        adjust:
+          ref: matrix_ring_top
+          shift: [47.5, -28]
+      nice_view:
+        what: infused-kim/nice_view
+        where:
+          ref: matrix_ring_top
+          shift: [63,-11]
+        adjust:
+            rotate: 0
+        params:
+            reverse: true
+            show_labels: false
+            # MOSI: P2              #Original pinout
+            # SCK: P20
+            # CS: P1
+            # VCC: VCC
+            # GND: GND
+            MOSI: P1                #Configuring pins in reverse to ensure jumper soldering is on the bottom
+            SCK: GND
+            CS: P2
+            VCC: VCC
+            GND: P3
