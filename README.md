@@ -23,7 +23,7 @@ Note: `Solder all the reversible pads on the bottom side of each half as instruc
 | Battery | 2x Lipo battery (301230)|
 | Power switch | 2x MSK-12C02 or compatible |
 | Reset button | 2x B3U-1000P(M) |
-| Switches | 18x Kailh Choc V1 |
-| Keycaps | 16x Kailh Choc V1 1u & 2x Kailh Choc V1 2u |
+| Switches | 18x Kailh Choc v1 |
+| Keycaps | 16x Kailh Choc v1 1u & 2x Kailh Choc v1 2u |
 | Hotswap sockets (Optional) | 18x Kailh Choc v1 |
 
