@@ -15,3 +15,15 @@ ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It
 - Mouting holes for a case
 
 Note: `Solder all the reversible pads on the bottom side of each half as instructed on the PCB` 
+
+## Requirements
+| Part | Specification |
+| ------ | ------ |
+| MCU | 2x Nice!Nano or SuperMini |
+| Battery | 2x Lipo battery (301230)|
+| Power switch | 2x MSK-12C02 or compatible |
+| Reset button | 2x B3U-1000P(M) |
+| Switches | 18x Kailh Choc V1 |
+| Keycaps | 16x Kailh Choc V1 1u & 2x Kailh Choc V1 2u |
+| Hotswap sockets (Optional) | 18x Kailh Choc v1 |
+
