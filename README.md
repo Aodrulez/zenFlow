@@ -29,3 +29,7 @@ Note: `Solder all the reversible pads & components (except battery, power switch
 | Hotswap sockets (Optional) | 18x Kailh Choc v1 |
 | Display (Optional) | 2x nice!view |
 
+## Credits
+- Ben Vallack for the videos & his Piano keyboard for inspiration
+- Ergogen which was used for most of the designing & FlatFootFox for the tutorial series 
+- ZMK community in general
