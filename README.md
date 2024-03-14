@@ -15,7 +15,7 @@ ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It
 - Mounting holes for a case
 
 
-Note: `Solder all the reversible pads & through-hole components (except battery, power switch & reset button) on the bottom side of each half as instructed on the PCB` 
+Note: `Solder all the reversible pads & components (except battery, power switch & reset button) on the bottom side of each half as instructed on the PCB` 
 
 ## Requirements
 | Part | Specification |
