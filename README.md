@@ -3,7 +3,7 @@
 ![Photo](images/zenFlow.jpg)
 
 
-ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It's powered by ZMK. Check [keymap](./keymap) for more details. 
+ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It's powered by [ZMK](https://zmk.dev/). Check [keymap](./keymap) for more details. 
 ## Features
 
 - 18 keys
@@ -31,5 +31,5 @@ Note: `Solder all the reversible pads & components (except battery, power switch
 
 ## Credits
 - Ben Vallack for the videos & his Piano keyboard for inspiration
-- Ergogen which was used for most of the designing & FlatFootFox for the tutorial series 
-- ZMK community in general
+- [Ergogen](https://docs.ergogen.xyz/) which was used for most of the designing & FlatFootFox for the tutorial series 
+- [ZMK](https://zmk.dev/) community in general
