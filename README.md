@@ -10,9 +10,9 @@ ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It
 - Split, ortholinear
 - Fully wireless, compatible with ZMK
 - Supports both hot-swap as well as direct soldering of Kailh Choc v1 switches
-- Supports Nice!View displays
+- Supports nice!view displays
 - Reversible PCB
-- Mouting holes for a case
+- Mounting holes for a case
 
 
 Note: `Solder all the reversible pads on the bottom side of each half as instructed on the PCB` 
