@@ -37,9 +37,9 @@ layers:
     - { t: "A", h: "SYM2" }
     - { t: "C", h: "NUM" }
     # thumbs
-    - { t: "SPC", h: "MEH" }
-    - { t: "ENT", h: "SHFT" }
-    - { t: "BSPC", h: "" }
+    - { t: "SPC", h: "SHFT" }
+    - { t: "MEH", h: "" }
+    - { t: "LC(BSPC)", h: "" }
     - { t: "AL2", h: "" }
   AL2:
     # left upper five (0.0 - 0.4)
@@ -104,7 +104,7 @@ layers:
   SYM2:
     # left upper five (0.0 - 0.4)
     - { t: "", h: "", type: ghost }
-    - { t: "", h: "" }
+    - { t: "\"", h: "" }
     - { t: "<", h: "" }
     - { t: ">", h: "" }
     - { t: "", h: "", type: ghost }
@@ -116,7 +116,7 @@ layers:
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
     - { t: "", h: "" }
-    - { t: "", h: "", type: held }
+    - { t: "'", h: "", type: held }
     - { t: "~", h: "" }
     - { t: "_", h: "" }
     - { t: "", h: "", type: ghost }
