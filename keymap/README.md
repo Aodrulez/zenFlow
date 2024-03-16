@@ -1,4 +1,4 @@
-## ZenFlow keymap
+## ZenFlow keymap 
 ![Keymap](../images/zenFlow_keymap.svg)
 
 ##### Created using Keymap Drawer (https://keymap-drawer.streamlit.app/)
