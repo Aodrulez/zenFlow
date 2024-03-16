@@ -92,7 +92,7 @@
 		bksp {
 			timeout-ms = <50>;
 			key-positions = <11 12>;
-			bindings = <&kp LC(BSPC)>;
+			bindings = <&kp BSPC>;
 			layers = <AL1 AL2 AL2U>;
 		};
 		ret {
@@ -224,7 +224,7 @@
 			bindings = <
 							&hm_l LCTL L		&hm_l LALT G		&hm_l LGUI D		&hm_r RGUI H	&hm_r RALT U	&hm_r RCTL O	  
 				&hl_l NM1 I		&hl_l SM2 S		&hl_l SM1 R		&hl_l SYS T		&hl_r SYS N	&hl_r SM1 E	&hl_r SM2 A	&hl_r NM1 C
-							&mt LC(LS(LALT)) SPC	&mt LSHIFT ENTER	&kp BKSP		&sl AL2
+							&mt LSHIFT SPC		&kp LC(LS(LALT)) 	&kp LC(BKSP)		&sl AL2
 			>;
 		};
 
@@ -246,8 +246,8 @@
 
 		sym2 {
 			bindings = <
-						&none	&kp LT	&kp GT					&kp LPAR	&kp RPAR	&kp LBRC
-				&none	&none	&kp TILDE	&kp UNDER			&kp LBKT	&kp RBKT	&kp RBRC	&none 
+					&kp dqt	&kp LT		&kp GT					&kp LPAR	&kp RPAR	&kp LBRC
+				&none	&kp sqt	&kp TILDE	&kp UNDER			&kp LBKT	&kp RBKT	&kp RBRC	&none 
 						&none	&none							&none	&kp RGUI
 			>;
 		};
