@@ -246,8 +246,8 @@
 
 		sym2 {
 			bindings = <
-					&kp dqt	&kp LT		&kp GT					&kp LPAR	&kp RPAR	&kp LBRC
-				&none	&kp sqt	&kp TILDE	&kp UNDER			&kp LBKT	&kp RBKT	&kp RBRC	&none 
+					&kp DQT	&kp LT		&kp GT					&kp LPAR	&kp RPAR	&kp LBRC
+				&none	&kp SQT	&kp TILDE	&kp UNDER			&kp LBKT	&kp RBKT	&kp RBRC	&none 
 						&none	&none							&none	&kp RGUI
 			>;
 		};
