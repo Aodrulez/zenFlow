@@ -21,6 +21,6 @@ include:
   - board: nice_nano_v2
     shield: zenFlow_left nice_view_adapter  nice_view
   - board: nice_nano_v2
-    shield: zenFlow_right nice_view_adapter  nice_view
+    shield: zenFlow_right 
   - board: nice_nano_v2
     shield: settings_reset
