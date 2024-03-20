@@ -1,5 +1,5 @@
 Use following config for [Nickcoutsos' keymap editor](https://nickcoutsos.github.io/keymap-editor/):
-##Usage:
+## Usage:
 - Open the url to keymap editor
 - Select Keyboard -> New Keyboard -> Custom -> Import from text
 - Paste the following in the window
