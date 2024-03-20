@@ -1,4 +1,4 @@
-Use following config for Nickcoutsos' keymap editor:
+Use following config for [Nickcoutsos' keymap editor](https://nickcoutsos.github.io/keymap-editor/):
 
 ```sh
 {
