@@ -49,11 +49,11 @@
 / { 
 	combos {
 		compatible = "zmk,combos";
-		combo_sys {
-			timeout-ms = <30>;
-			key-positions = <3 4 5>;
-			bindings = <&tog SYS>;
-		};
+		//combo_sys {
+		//	timeout-ms = <30>;
+		//	key-positions = <3 4 5>;
+		//	bindings = <&tog SYS>;
+		// };
 		/* combo_img { */
 		/* 	timeout-ms = <30>; */
 		/* 	key-positions = <0 1 2>; */
