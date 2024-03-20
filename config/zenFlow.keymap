@@ -48,7 +48,7 @@
         //	bindings = <&tog SYS>;
         // };
 
-/*
+
         combo_game {
             timeout-ms = <30>;
             key-positions = <15 16>;
@@ -62,7 +62,7 @@
             bindings = <&tog AL1>;
             layers = <GM>;
         };
-*/
+
         combo_caps {
             timeout-ms = <30>;
             key-positions = <10 11 12>;
@@ -136,7 +136,7 @@
             timeout-ms = <200>;
             key-positions = <11 12>;
             bindings = <&kp N0>;
-            layers = <NM1 IMG>;
+            layers = <NM1>;
         };
 
         number_7 {
