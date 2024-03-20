@@ -48,6 +48,7 @@
         //	bindings = <&tog SYS>;
         // };
 
+/*
         combo_game {
             timeout-ms = <30>;
             key-positions = <15 16>;
@@ -61,7 +62,7 @@
             bindings = <&tog AL1>;
             layers = <GM>;
         };
-
+*/
         combo_caps {
             timeout-ms = <30>;
             key-positions = <10 11 12>;
