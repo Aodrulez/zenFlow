@@ -97,7 +97,7 @@
             layers = <SYS>;
         };
 
-        bksp {
+        BSPC {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp BSPC>;
@@ -252,7 +252,7 @@
 
         alpha1 {
             bindings = <
-&hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 A  &hl_r NM1 C  &mt LSHIFT SPC  &kp LC(LS(LALT))  &kp BKSP  &sl AL2
+&hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 A  &hl_r NM1 C  &mt LSHIFT SPC  &kp LC(LS(LALT))  &kp BSPC  &sl AL2
             >;
         };
 
@@ -282,7 +282,7 @@
 
         sys {
             bindings = <
-&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &td Q BKSP  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
+&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &td Q BSPC  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
             >;
         };
 
@@ -300,7 +300,7 @@
 
         game {
             bindings = <
-&kp TAB  &kp W  &kp R  &none  &none  &kp BKSP  &kp LSHIFT  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LCTRL SPACE  &kp B  &none  &key_repeat
+&kp TAB  &kp W  &kp R  &none  &none  &kp BSPC  &kp LSHIFT  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LCTRL SPACE  &kp B  &none  &key_repeat
             >;
         };
     };
