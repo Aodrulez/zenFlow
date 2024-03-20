@@ -2,10 +2,11 @@ Use following config for [Nickcoutsos' keymap editor](https://nickcoutsos.github
 ## Usage:
 - Open the url to keymap editor
 - Select Keyboard -> New Keyboard -> Custom -> Import from text
-- Paste the following in the window
+- Paste the config data shown below in the text-box
 - Paste contents of the [keymap](../config/zenFlow.keymap) file in the keymap text-box
 - Submit
 
+## Config
 ```sh
 {
   "id": "zenFlow",
