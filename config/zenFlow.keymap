@@ -45,7 +45,7 @@
 #define SYS 5
 #define BT 6	
 #define AL2U 7
-#define IMG 8
+#define GM 8
 / { 
 	combos {
 		compatible = "zmk,combos";
@@ -54,11 +54,13 @@
 		//	key-positions = <3 4 5>;
 		//	bindings = <&tog SYS>;
 		// };
-		/* combo_img { */
-		/* 	timeout-ms = <30>; */
-		/* 	key-positions = <0 1 2>; */
-		/* 	bindings = <&tog IMG>; */
-		/* }; */
+
+
+		combo_game {
+			timeout-ms = <30>;
+			key-positions = <15 16>;
+			bindings = <&tog GM>;
+		 };
 		combo_caps {
 			timeout-ms = <30>;
 			key-positions = <10 11 12>;
@@ -293,7 +295,7 @@
 			>;
 		};
 
-		img {
+		game {
 			bindings = <
 							&hm_l LCTL V	&hm_l LALT A	&hm_l LGUI P		&none	&none	&kp BKSP
 				&kp LSHIFT  &td I G		&td H M		&td J Z						&none	&none	&none	&kp RET
