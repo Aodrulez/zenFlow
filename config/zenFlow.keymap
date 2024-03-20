@@ -61,6 +61,12 @@
 			key-positions = <15 16>;
 			bindings = <&tog GM>;
 		 };
+		combo_game_exit {
+			timeout-ms = <30>;
+			key-positions = <15 16>;
+			bindings = <&tog AL1>;
+			layers = <GM>; 
+		 };
 		combo_caps {
 			timeout-ms = <30>;
 			key-positions = <10 11 12>;
