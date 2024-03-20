@@ -14,8 +14,6 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
-
-
 &mt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
@@ -48,7 +46,6 @@
         //	bindings = <&tog SYS>;
         // };
 
-
         combo_game {
             timeout-ms = <30>;
             key-positions = <15 16>;
@@ -59,7 +56,7 @@
         combo_game_exit {
             timeout-ms = <30>;
             key-positions = <15 16>;
-            bindings = <&to AL1>;
+            bindings = <&tog AL1>;
             layers = <GM>;
         };
 
@@ -300,7 +297,7 @@
 
         game {
             bindings = <
-&kp TAB  &kp W  &kp R  &none  &none  &kp BSPC  &kp LSHIFT  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LCTRL SPACE  &kp B  &none  &none 
+&kp TAB  &kp W  &kp R  &none  &none  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
             >;
         };
     };
