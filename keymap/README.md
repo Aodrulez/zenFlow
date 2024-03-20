@@ -235,7 +235,7 @@ layers:
     - { t: "", h: "" }
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
-    - { t: "SHFT", h: "" }
+    - { t: "CTL", h: "" }
     - { t: "A", h: "" }
     - { t: "S", h: "" }
     - { t: "D", h: "" }
@@ -247,8 +247,8 @@ layers:
     - { t: "", h: "" }
     - { t: "ENT", h: "" }
     # thumbs
-    - { t: "SPC", h: "CTL" }
-    - { t: "B", h: "" }
+    - { t: "SPC", h: "SHFT" }
+    - { t: "G", h: "B" }
     - { t: "", h: "" }
     - { t: "", h: "" }
 
@@ -262,7 +262,6 @@ combos:
   #- { p: [16, 17], k: "RCLK", layers: [SYS] }
   #- { p: [6, 7], k: "LCLK", layers: [SYS] }
   # Operators
-  - { p: [17, 18], k: "BSPC", layers: [AL1] }
   - { p: [7, 8], k: "ENT", layers: [AL1] }
   - { p: [1, 2], k: "ESC", layers: [AL1] }
   - { p: [11, 12], k: "TAB", layers: [AL1] }
