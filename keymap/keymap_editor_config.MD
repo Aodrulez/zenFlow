@@ -1,4 +1,10 @@
 Use following config for [Nickcoutsos' keymap editor](https://nickcoutsos.github.io/keymap-editor/):
+##Usage:
+- Open the url to keymap editor
+- Select Keyboard -> New Keyboard -> Custom -> Import from text
+- Paste the following in the window
+- Paste contents of the [keymap](../config/zenFlow.keymap) file in the keymap text-box
+- Submit
 
 ```sh
 {
