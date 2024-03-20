@@ -39,7 +39,7 @@ layers:
     # thumbs
     - { t: "SPC", h: "SHFT" }
     - { t: "MEH", h: "" }
-    - { t: "LC(BSPC)", h: "" }
+    - { t: "BSPC", h: "" }
     - { t: "AL2", h: "" }
   AL2:
     # left upper five (0.0 - 0.4)
@@ -247,8 +247,8 @@ layers:
     - { t: "", h: "" }
     - { t: "ENT", h: "" }
     # thumbs
-    - { t: "SPC", h: "SHFT" }
-    - { t: "CTL", h: "" }
+    - { t: "SPC", h: "CTL" }
+    - { t: "B", h: "" }
     - { t: "", h: "" }
     - { t: "", h: "" }
 
