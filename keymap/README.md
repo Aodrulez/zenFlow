@@ -221,6 +221,36 @@ layers:
     - { t: "", h: "" }
     - { t: "", h: "" }
     - { t: "", h: "" }
+  GAME:
+    # left upper five (0.0 - 0.4)
+    - { t: "", h: "", type: ghost }
+    - { t: "TAB", h: "" }
+    - { t: "W", h: "" }
+    - { t: "R", h: "" }
+    - { t: "", h: "", type: ghost }
+    # right upper five (0.5 - 0.9)
+    - { t: "", h: "", type: ghost }
+    - { t: "", h: "" }
+    - { t: "", h: "" }
+    - { t: "", h: "" }
+    - { t: "", h: "", type: ghost }
+    # left home five (1.0 - 1.4)
+    - { t: "SHFT", h: "" }
+    - { t: "A", h: "" }
+    - { t: "S", h: "" }
+    - { t: "D", h: "" }
+    - { t: "", h: "", type: ghost }
+    # right home five (1.5 - 1.9)
+    - { t: "", h: "", type: ghost }
+    - { t: "", h: "" }
+    - { t: "", h: "" }
+    - { t: "", h: "" }
+    - { t: "ENT", h: "" }
+    # thumbs
+    - { t: "SPC", h: "SHFT" }
+    - { t: "CTL", h: "" }
+    - { t: "", h: "" }
+    - { t: "", h: "" }
 
 combos:
   # Numbers
@@ -238,6 +268,10 @@ combos:
   - { p: [11, 12], k: "TAB", layers: [AL1] }
   # Bluetooth
   - { p: [16, 18], k: "BT", a: bottom, layers: [SYM1] }
+  # Enter Game layer
+  - { p: [21, 22], k: "GAME", a: bottom, layers: [AL1] }
+  # Exit Game layer
+  - { p: [21, 22], k: "AL1", a: bottom, layers: [GAME] }
 
 # this goes into the "configuration" code/text box at the bottom of the website!
 draw_config:
