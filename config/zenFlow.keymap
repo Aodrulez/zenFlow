@@ -59,7 +59,7 @@
         combo_game_exit {
             timeout-ms = <30>;
             key-positions = <15 16>;
-            bindings = <&tog AL1>;
+            bindings = <&to AL1>;
             layers = <GM>;
         };
 
