@@ -14,12 +14,7 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
-/*
-#define U_MOUSE_MOVE_MAX 1400
-&mmv {
-	time-to-max-speed-ms = <150>;             
-};
-*/
+
 
 &mt {
     tapping-term-ms = <250>;
@@ -57,13 +52,14 @@
             timeout-ms = <30>;
             key-positions = <15 16>;
             bindings = <&tog GM>;
+            layers = <AL1>;
         };
 
         combo_game_exit {
             timeout-ms = <30>;
             key-positions = <15 16>;
             bindings = <&tog AL1>;
-	    layers = <GM>;
+            layers = <GM>;
         };
 
         combo_caps {
