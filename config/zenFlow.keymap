@@ -281,7 +281,7 @@
 
         sys {
             bindings = <
-&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &td LA(F4) F2  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
+&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &kp LA(F4)  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
             >;
         };
 
