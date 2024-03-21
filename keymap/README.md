@@ -172,7 +172,7 @@ layers:
     - { t: "", h: "", type: ghost }
     - { t: "CPY", h: "PST" }
     - { t: "↑", h: "" }
-    - { t: "BSPC", h: "Q" }
+    - { t: "ALT(F4)", h: "" }
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
     - { t: "DEL", h: "HOME" }
@@ -184,8 +184,8 @@ layers:
     - { t: "", h: "", type: ghost }
     - { t: "←", h: "", type: held }
     - { t: "↓", h: "" }
-    - { t: "→", h: "SCRS" }
-    - { t: "ENT", h: "" }
+    - { t: "→", h: "" }
+    - { t: "F2", h: "SCRS" }
     # thumbs
     - { t: "SHFT", h: "" }
     - { t: "ALT", h: "" }
