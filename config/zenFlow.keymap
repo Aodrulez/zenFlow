@@ -275,7 +275,7 @@
 
         num {
             bindings = <
-&hm_l LCTRL DOT  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp LSHIFT  &kp EQUAL  &kp RCTRL  &kp RGUI
+&hm_l LCTRL DOT  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp LSHIFT  &kp EQUAL  &kp BACKSPACE  &kp RGUI
             >;
         };
 
