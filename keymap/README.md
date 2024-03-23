@@ -159,7 +159,7 @@ layers:
     # thumbs
     - { t: "SHFT", h: "" }
     - { t: "=", h: "" }
-    - { t: "", h: "" }
+    - { t: "BSPC", h: "" }
     - { t: "GUI", h: "" }
   SYS:
     # left upper five (0.0 - 0.4)
