@@ -1,7 +1,7 @@
 # ZenFlow
 ## My endgame 18 key custom keyboard 
 ![Photo](images/zenFlow-case.jpg)
-![Photo](images/zenFlow.jpg)
+[comment]: ![Photo](images/zenFlow.jpg)
 
 
 ZenFlow is a fully custom split wireless keyboard made using Ergogen + KiCad. It's powered by [ZMK](https://zmk.dev/). Check [keymap](./keymap) for more details. 
