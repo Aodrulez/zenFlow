@@ -1,5 +1,6 @@
 # ZenFlow
 ## My endgame 18 key custom keyboard 
+![Photo](images/zenFlow-case.jpg)
 ![Photo](images/zenFlow.jpg)
 
 
