@@ -5,11 +5,11 @@
  *  
  */
 
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
@@ -281,7 +281,7 @@
 
         sys {
             bindings = <
-&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &kp LA(F4)  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
+&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &mt LA(F4) F3  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
             >;
         };
 
@@ -299,7 +299,7 @@
 
         game {
             bindings = <
-&kp TAB  &kp W  &kp R  &none  &none  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
+&mt TAB F  &kp W  &mt E R  &none  &none  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
             >;
         };
     };
