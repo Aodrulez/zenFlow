@@ -172,7 +172,7 @@ layers:
     - { t: "", h: "", type: ghost }
     - { t: "CPY", h: "PST" }
     - { t: "↑", h: "" }
-    - { t: "ALT(F4)", h: "" }
+    - { t: "F3", h: "ALT(F4)" }
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
     - { t: "DEL", h: "HOME" }
@@ -224,9 +224,9 @@ layers:
   GAME:
     # left upper five (0.0 - 0.4)
     - { t: "", h: "", type: ghost }
-    - { t: "TAB", h: "" }
+    - { t: "F", h: "TAB" }
     - { t: "W", h: "" }
-    - { t: "R", h: "" }
+    - { t: "R", h: "E" }
     - { t: "", h: "", type: ghost }
     # right upper five (0.5 - 0.9)
     - { t: "", h: "", type: ghost }
