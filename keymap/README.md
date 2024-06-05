@@ -157,7 +157,7 @@ layers:
     - { t: "6", h: "" }
     - { t: "=", h: "", type: held }
     # thumbs
-    - { t: "SHFT", h: "" }
+    - { t: "SPC", h: "SHFT" }
     - { t: "=", h: "" }
     - { t: "BSPC", h: "" }
     - { t: "GUI", h: "" }
@@ -230,9 +230,9 @@ layers:
     - { t: "", h: "", type: ghost }
     # right upper five (0.5 - 0.9)
     - { t: "", h: "", type: ghost }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
+    - { t: "F1", h: "" }
+    - { t: "F2", h: "" }
+    - { t: "F3", h: "" }
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
     - { t: "CTL", h: "" }
@@ -242,9 +242,9 @@ layers:
     - { t: "", h: "", type: ghost }
     # right home five (1.5 - 1.9)
     - { t: "", h: "", type: ghost }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
+    - { t: "F8", h: "" }
+    - { t: "F11", h: "" }
+    - { t: "F12", h: "" }
     - { t: "ENT", h: "" }
     # thumbs
     - { t: "SPC", h: "SHFT" }
