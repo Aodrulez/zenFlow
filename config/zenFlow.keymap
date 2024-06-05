@@ -275,7 +275,7 @@
 
         num {
             bindings = <
-&hm_l LCTRL DOT  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &kp LSHIFT  &kp EQUAL  &kp BACKSPACE  &kp RGUI
+&hm_l LCTRL DOT  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &mt LSHIFT SPACE  &kp EQUAL  &kp BACKSPACE  &kp RGUI
             >;
         };
 
@@ -299,7 +299,7 @@
 
         game {
             bindings = <
-&mt TAB F  &kp W  &mt E R  &none  &none  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp D  &none  &none  &none  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
+&mt TAB F  &kp W  &mt E R  &kp F1  &kp F2  &kp F3  &kp LCTRL  &kp A  &kp S  &kp D  &kp F8  &kp F11  &kp F12  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
             >;
         };
     };
