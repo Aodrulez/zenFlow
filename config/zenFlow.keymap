@@ -251,7 +251,7 @@
 
         alpha1 {
             bindings = <
-&hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 A  &hl_r NM1 C  &mt LSHIFT SPACE  &kp LC(LS(LALT))  &kp BSPC  &sl AL2
+&hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 A  &hl_r NM1 C  &mt LSHIFT SPACE  &mt LC(V) LC(C)  &kp BSPC  &sl AL2
             >;
         };
 
@@ -269,7 +269,7 @@
 
         sym2 {
             bindings = <
-&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp LBRC  &none  &kp SQT  &kp TILDE  &kp UNDER  &kp LBKT  &kp RBKT  &kp RBRC  &none  &none  &none  &none  &kp RGUI
+&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &none  &none  &none  &kp RGUI
             >;
         };
 
