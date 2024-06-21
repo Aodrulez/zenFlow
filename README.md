@@ -4,7 +4,7 @@
 Kailh Choc V1 variant:
 ![Photo](images/zenFlow-case.jpg)
 
-MX variant:
+MX 3d printed + hand wired variant:
 ![Photo](images/zenFlowMX.jpg)
 
 
