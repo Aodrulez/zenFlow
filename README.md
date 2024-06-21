@@ -1,6 +1,10 @@
 # ZenFlow
 ## My endgame 18 key custom keyboard 
+
+Kailh Choc V1 variant:
 ![Photo](images/zenFlow-case.jpg)
+
+MX variant:
 ![Photo](images/zenFlowMX.jpg)
 
 
