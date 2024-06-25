@@ -97,9 +97,9 @@ layers:
     - { t: "|", h: "" }
     - { t: "~", h: "" }
     # thumbs
-    - { t: "", h: "" }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
+    - { t: "trans", h: "" }
+    - { t: "trans", h: "" }
+    - { t: "trans", h: "" }
     - { t: "RGUI", h: "" }
   SYM2:
     # left upper five (0.0 - 0.4)
@@ -127,14 +127,14 @@ layers:
     - { t: "}", h: "", type: held }
     - { t: "", h: "" }
     # thumbs
-    - { t: "", h: "" }
-    - { t: "", h: "" }
-    - { t: "", h: "" }
+    - { t: "trans", h: "" }
+    - { t: "trans", h: "" }
+    - { t: "trans", h: "" }
     - { t: "RGUI", h: "" }
   NUM:
     # left upper five (0.0 - 0.4)
     - { t: "", h: "", type: ghost }
-    - { t: ".", h: "" }
+    - { t: "=", h: "" }
     - { t: ",", h: "" }
     - { t: ";", h: "" }
     - { t: "", h: "", type: ghost }
@@ -155,11 +155,11 @@ layers:
     - { t: "4", h: "" }
     - { t: "5", h: "" }
     - { t: "6", h: "" }
-    - { t: "=", h: "", type: held }
+    - { t: ".", h: "", type: held }
     # thumbs
     - { t: "SPC", h: "SHFT" }
     - { t: "=", h: "" }
-    - { t: "BSPC", h: "" }
+    - { t: "trans", h: "" }
     - { t: "GUI", h: "" }
   SYS:
     # left upper five (0.0 - 0.4)
@@ -189,7 +189,7 @@ layers:
     # thumbs
     - { t: "SHFT", h: "" }
     - { t: "ALT", h: "" }
-    - { t: "ALT", h: "" }
+    - { t: "trans", h: "" }
     - { t: "GUI", h: "" }
   BT:
     # left upper five (0.0 - 0.4)
