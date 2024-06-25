@@ -257,25 +257,25 @@
 
         alpha2 {
             bindings = <
-&kp V  &kp W  &kp M  &kp F  &kp SQT  &kp Z  &kp Q  &kp J  &kp P  &kp K  &kp B  &td COMMA DOT  &kp X  &kp Y  &sk LSHIFT  &trans  &trans  &sl AL2U
+&kp V  &kp W  &kp M  &kp F  &kp SQT  &kp Z  &kp Q  &kp J  &kp P  &kp K  &kp B  &td COMMA DOT  &kp X  &kp Y  &trans  &trans  &trans  &sl AL2U
             >;
         };
 
         sym1 {
             bindings = <
-&kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  &none  &none  &none  &kp RGUI
+&kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  &trans  &trans  &trans  &kp RGUI
             >;
         };
 
         sym2 {
             bindings = <
-&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &none  &none  &none  &kp RGUI
+&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &trans  &trans  &trans  &kp RGUI
             >;
         };
 
         num {
             bindings = <
-&hm_l LCTRL DOT  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp EQUAL  &mt LSHIFT SPACE  &kp EQUAL  &kp BACKSPACE  &kp RGUI
+&hm_l LCTRL ASTRK  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp PERIOD  &trans  &kp EQUAL  &kp BACKSPACE  &kp RGUI
             >;
         };
 
