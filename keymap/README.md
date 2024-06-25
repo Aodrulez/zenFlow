@@ -38,7 +38,7 @@ layers:
     - { t: "C", h: "NUM" }
     # thumbs
     - { t: "SPC", h: "SHFT" }
-    - { t: "MEH", h: "" }
+    - { t: "CPY", h: "PST" }
     - { t: "BSPC", h: "" }
     - { t: "AL2", h: "" }
   AL2:
@@ -112,19 +112,19 @@ layers:
     - { t: "", h: "", type: ghost }
     - { t: "(", h: "" }
     - { t: ")", h: "" }
-    - { t: "{", h: "" }
+    - { t: "~", h: "" }
     - { t: "", h: "", type: ghost }
     # left home five (1.0 - 1.4)
     - { t: "", h: "" }
     - { t: "'", h: "", type: held }
-    - { t: "~", h: "" }
-    - { t: "_", h: "" }
+    - { t: "{", h: "" }
+    - { t: "}", h: "" }
     - { t: "", h: "", type: ghost }
     # right home five (1.5 - 1.9)
     - { t: "", h: "", type: ghost }
     - { t: "[", h: "" }
     - { t: "]", h: "" }
-    - { t: "}", h: "", type: held }
+    - { t: "_", h: "", type: held }
     - { t: "", h: "" }
     # thumbs
     - { t: "trans", h: "" }
