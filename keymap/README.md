@@ -134,7 +134,7 @@ layers:
   NUM:
     # left upper five (0.0 - 0.4)
     - { t: "", h: "", type: ghost }
-    - { t: "=", h: "" }
+    - { t: "*", h: "" }
     - { t: ",", h: "" }
     - { t: ";", h: "" }
     - { t: "", h: "", type: ghost }
