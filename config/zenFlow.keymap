@@ -73,27 +73,6 @@
             layers = <SM1>;
         };
 
-        lalt {
-            timeout-ms = <20>;
-            key-positions = <8 9>;
-            bindings = <&kp LALT>;
-            layers = <SYS>;
-        };
-
-        lclk {
-            timeout-ms = <20>;
-            key-positions = <10 11>;
-            bindings = <&mkp LCLK>;
-            layers = <SYS>;
-        };
-
-        rclk {
-            timeout-ms = <20>;
-            key-positions = <3 4>;
-            bindings = <&mkp RCLK>;
-            layers = <SYS>;
-        };
-
         /*
         bksp {
             timeout-ms = <50>;
@@ -105,7 +84,7 @@
 
         ret {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <1 2>;
             bindings = <&kp RET>;
             layers = <AL1 AL2 AL2U>;
         };
