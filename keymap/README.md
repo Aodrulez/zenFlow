@@ -262,7 +262,7 @@ combos:
   #- { p: [16, 17], k: "RCLK", layers: [SYS] }
   #- { p: [6, 7], k: "LCLK", layers: [SYS] }
   # Operators
-  - { p: [7, 8], k: "ENT", layers: [AL1] }
+  - { p: [2, 3], k: "ENT", layers: [AL1] }
   - { p: [1, 2], k: "ESC", layers: [AL1] }
   - { p: [11, 12], k: "TAB", layers: [AL1] }
   # Bluetooth
