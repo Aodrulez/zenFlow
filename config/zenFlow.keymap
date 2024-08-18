@@ -242,7 +242,7 @@
 
         sym1 {
             bindings = <
-&kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  &trans  &trans  &trans  &kp RGUI
+&kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)
             >;
         };
 
