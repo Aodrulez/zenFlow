@@ -97,10 +97,10 @@ layers:
     - { t: "|", h: "" }
     - { t: "~", h: "" }
     # thumbs
-    - { t: "trans", h: "" }
-    - { t: "trans", h: "" }
-    - { t: "trans", h: "" }
-    - { t: "RGUI", h: "" }
+    - { t: "TAB-PRV", h: "" }
+    - { t: "TAB-NXT", h: "" }
+    - { t: "PG-PRV", h: "" }
+    - { t: "PG-NXT", h: "" }
   SYM2:
     # left upper five (0.0 - 0.4)
     - { t: "", h: "", type: ghost }
