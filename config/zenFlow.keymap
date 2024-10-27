@@ -248,7 +248,7 @@
 
         sym2 {
             bindings = <
-&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &trans  &trans  &trans  &kp RGUI
+&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &trans  &trans  &kp BSPC  &kp RGUI
             >;
         };
 
@@ -260,7 +260,7 @@
 
         sys {
             bindings = <
-&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &mt LA(F4) F3  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
+&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &mt LA(F4) F3  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp BSPC  &kp RGUI
             >;
         };
 
