@@ -40,14 +40,13 @@
 		, <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		;
 	};
+};
 
-	&gpio0 {
-	    extpower_pull: extpower_pull {
-	        gpio-hog;
-	        gpios = <13 GPIO_ACTIVE_HIGH>;
-	        output-low;
-	        line-name = "Disable ext power pin";
-	    };
-	};
-
+&gpio0 {
+    extpower_pull: extpower_pull {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "Disable ext power pin";
+    };
 };
