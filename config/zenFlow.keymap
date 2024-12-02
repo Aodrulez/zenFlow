@@ -15,7 +15,7 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <190>;
     flavor = "tap-preferred";
 };
 
@@ -47,27 +47,27 @@
         // };
 
         combo_game {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&tog GM>;
             layers = <AL1>;
         };
 
         combo_game_exit {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&to AL1>;
             layers = <GM>;
         };
 
         combo_caps {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             key-positions = <10 11 12>;
             bindings = <&caps_word>;
         };
 
         combo_bt {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             key-positions = <10 12>;
             bindings = <&to BT>;
             layers = <SM1>;
@@ -161,7 +161,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHIFT_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <220>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&to>;
