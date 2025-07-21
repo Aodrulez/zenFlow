@@ -14,6 +14,11 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
+#define COMBO_TERM 30
+#define TAPPING_TERM 250
+#define QUICK_TAP_TERM 175
+
+
 &mt {
     tapping-term-ms = <180>;
     flavor = "tap-preferred";
