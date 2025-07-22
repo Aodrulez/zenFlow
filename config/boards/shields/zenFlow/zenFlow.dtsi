@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "zenFlow-layouts.dtsi"
 
-&physical_layout0 {
+&physical_layout {
     transform = <&default_transform>;
 };
 
@@ -16,7 +16,7 @@
 	chosen {
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
-		zmk,physical-layout = &physical_layout0;
+		zmk,physical-layout = &physical_layout;
 	};
 
 	default_transform: keymap_transform_0 {
