@@ -1,9 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    zenFlow_layout: zenFlow_layout {
+    default_transform: default_transform {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
+        display-name = "default transform";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  100    0       0     0     0>
@@ -30,8 +30,8 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        zenFlow_layout {
-            physical-layout = <&zenFlow_layout>;
+        default_transform {
+            physical-layout = <&default_transform>;
             positions = <>;
         };
     };
