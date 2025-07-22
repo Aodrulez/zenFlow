@@ -6,6 +6,8 @@ url: https://github.com/Aodrulez/zenFlow
 requires: [pro_micro]
 features:
   - keys
+  - display
+  - studio
 siblings:
   - zenFlow_left
   - zenFlow_right
