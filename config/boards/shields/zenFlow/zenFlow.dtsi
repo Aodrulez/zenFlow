@@ -7,6 +7,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "zenFlow-layouts.dtsi"
 
+&zenFlow_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+};
 
 / {
 
