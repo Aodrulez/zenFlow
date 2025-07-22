@@ -28,4 +28,14 @@
               , <&key_physical_attrs 100 100  800  200       0     0     0>
               ;
       };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        default_transform {
+            physical-layout = <&default_transform>;
+            positions = <>;
+        };
+    };
+
   };
