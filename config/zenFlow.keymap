@@ -181,7 +181,6 @@
         hold-trigger-on-release;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <10 11 12 13 14 15 16>;
-        quick-release;
     };
 
     hl_r: homerow_layers_right {
@@ -194,7 +193,6 @@
         hold-trigger-on-release;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <0 1 2 3 4 5 6>;
-        quick-release;
     };
 
     td: tapdance {
