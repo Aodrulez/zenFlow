@@ -16,10 +16,8 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
 &mt {
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    require-prior-idle-ms = <150>;
-    hold-trigger-on-release;
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 &sk {
@@ -42,12 +40,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        //combo_sys {
-        //	timeout-ms = <30>;
-        //	key-positions = <3 4 5>;
-        //	bindings = <&tog SYS>;
-        // };
 
         combo_game {
             timeout-ms = <30>;
@@ -75,15 +67,6 @@
             bindings = <&to BT>;
             layers = <SM1>;
         };
-
-        /*
-        bksp {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp BSPC>;
-            layers = <AL1 AL2 AL2U>;
-        };
-*/
 
         ret {
             timeout-ms = <50>;
@@ -135,99 +118,93 @@
         };
     };
 
-   behaviors {
-    hm_l: homerow_mods_left {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <10 11 12 13 14 15 16>;
-    };
+    behaviors {
+        hm_l: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <10 11 12 13 14 15 16>;
+        };
 
-    hm_r: homerow_mods_right {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <0 1 2 3 4 5 6>;
-    };
+        hm_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6>;
+        };
 
-    sr: shift_layer {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <280>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&kp>, <&to>;
-    };
+        hl_l: homerow_layers_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <10 11 12 13 14 15 16>;
+        };
 
-    hl_l: homerow_layers_left {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <220>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&mo>, <&kp>;
-        hold-trigger-key-positions = <10 11 12 13 14 15 16>;
-    };
-    
-    hl_r: homerow_layers_right {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        tapping-term-ms = <220>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&mo>, <&kp>;
-        hold-trigger-key-positions = <0 1 2 3 4 5 6>;
-    };
+        hl_r: homerow_layers_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6>;
+        };
 
-    td: tapdance {
-        compatible = "zmk,behavior-hold-tap";
-        label = "TAPDANCE";
-        #binding-cells = <2>;
-        tapping-term-ms = <190>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        sr: shift_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&to>;
+        };
+
+        td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
+
+        space_shift: shift_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp SPACE>, <&kp LSHIFT>;
+        };
+
+        alpha2macro: behavior_macro_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl AL2>;
+        };
+
+        caps_alpha2macro: behavior_macro_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl AL2U>;
+        };
     };
-
-    alpha2macro: behavior_macro_1 {
-        compatible = "zmk,behavior-macro";
-        label = "MACRO1";
-        #binding-cells = <0>;
-        bindings = <&sl AL2>;
-    };
-
-    caps_alpha2macro: behavior_macro_2 {
-        compatible = "zmk,behavior-macro";
-        label = "MACRO2";
-        #binding-cells = <0>;
-        bindings = <&sl AL2U>;
-    };
-
-    space_shift: shift_space {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
-        tapping-term-ms = <280>;
-        flavor = "balanced";
-        require-prior-idle-ms = <150>;
-        hold-trigger-on-release;
-        bindings = <&kp SPACE>, <&kp LSHIFT>;
-    };
-};
-
-
-    //			00	01	02			03	04	05
-    //		06	07	08	09			10	11	12	13
-    //					14	15	16	17
 
     macros {
     };
@@ -237,55 +214,71 @@
 
         alpha1 {
             bindings = <
-&hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 A  &hl_r NM1 C  &space_shift  &mt LC(V) LC(C)  &kp BSPC  &sl AL2
+                &hm_l LCTRL L  &hm_l LALT G  &hm_l LGUI D  &hm_r RGUI H  &hm_r RALT U  &hm_r RCTRL O  
+                &hl_l NM1 I  &hl_l SM2 S  &hl_l SM1 R  &hl_l SYS T  &hl_r SYS N  &hl_r SM1 E  
+                &hl_r SM2 A  &hl_r NM1 C  &space_shift  &mt LC(V) LC(C)  &kp BSPC  &sl AL2
             >;
         };
 
         alpha2 {
             bindings = <
-&kp V  &kp W  &kp M  &kp F  &kp SQT  &kp Z  &kp Q  &kp J  &kp P  &kp K  &kp B  &td COMMA DOT  &kp X  &kp Y  &trans  &trans  &trans  &sl AL2U
+                &kp V  &kp W  &kp M  &kp F  &kp SQT  &kp Z  &kp Q  &kp J  &kp P  &kp K  
+                &kp B  &td COMMA DOT  &kp X  &kp Y  &trans  &trans  &trans  &sl AL2U
             >;
         };
 
         sym1 {
             bindings = <
-&kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)
+                &kp EXCL  &kp AT_SIGN  &kp HASH  &kp AMPS  &kp STAR  &kp QMARK  &kp GRAVE  
+                &kp DLLR  &kp PRCNT  &kp CARET  &kp UNDER  &kp BSLH  &kp PIPE  &kp TILDE  
+                &kp LC(LS(TAB))  &kp LC(TAB)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)
             >;
         };
 
         sym2 {
             bindings = <
-&kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  &trans  &trans  &trans  &kp RGUI
+                &kp DQT  &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp TILDE  &none  &kp SQT  
+                &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT  &kp RBKT  &kp UNDER  &none  
+                &trans  &trans  &trans  &kp RGUI
             >;
         };
 
         num {
             bindings = <
-&hm_l LCTRL ASTRK  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  &kp PERIOD  &trans  &kp EQUAL  &kp BACKSPACE  &kp RGUI
+                &hm_l LCTRL ASTRK  &hm_l LALT COMMA  &hm_l LGUI SEMI  &hm_r RGUI N1  &hm_r RALT N2  
+                &hm_r RCTRL N3  &kp SLASH  &kp MINUS  &kp PLUS  &kp COLON  &kp N4  &kp N5  &kp N6  
+                &kp PERIOD  &trans  &kp EQUAL  &kp BACKSPACE  &kp RGUI
             >;
         };
 
         sys {
             bindings = <
-&mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &mt LA(F4) F3  &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
+                &mkp RCLK  &mmv MOVE_UP  &mkp LCLK  &td LC(V) LC(C)  &kp UP  &mt LA(F4) F3  
+                &td HOME DEL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  
+                &kp RIGHT  &td PSCRN F2  &kp LSHIFT  &kp LCTRL  &kp RALT  &kp RGUI
             >;
         };
 
         bt {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &none  &studio_unlock  &none  &none  &bootloader  &bootloader  &none  &none  &bt BT_CLR  &to AL1  &none  &none  &none
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &none  &studio_unlock  
+                &none  &none  &bootloader  &bootloader  &none  &none  &bt BT_CLR  &to AL1  
+                &none  &none  &none
             >;
         };
 
         alpha2cap {
             bindings = <
-&kp LS(V)  &kp LS(W)  &kp LS(M)  &kp LS(F)  &kp DQT  &kp LS(Z)  &kp LS(Q)  &kp LS(J)  &kp LS(P)  &kp LS(K)  &kp LS(B)  &kp COMMA  &kp LS(X)  &kp LS(Y)  &trans  &trans  &trans  &trans
+                &kp LS(V)  &kp LS(W)  &kp LS(M)  &kp LS(F)  &kp DQT  &kp LS(Z)  &kp LS(Q)  
+                &kp LS(J)  &kp LS(P)  &kp LS(K)  &kp LS(B)  &kp COMMA  &kp LS(X)  &kp LS(Y)  
+                &trans  &trans  &trans  &trans
             >;
         };
 
         game {
             bindings = <
-&mt TAB F  &kp W  &mt E R  &kp F1  &kp F2  &kp F3  &kp LCTRL  &kp A  &kp S  &kp D  &kp F8  &kp F11  &kp F12  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
+                &mt TAB F  &kp W  &mt E R  &kp F1  &kp F2  &kp F3  &kp LCTRL  &kp A  &kp S  
+                &kp D  &kp F8  &kp F11  &kp F12  &kp RET  &mt LSHFT SPACE  &mt B G  &none  &none
             >;
         };
     };
