@@ -16,8 +16,10 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 10    // 10
 
 &mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    flavor = "balanced";
+    require-prior-idle-ms = <150>;
+    hold-trigger-on-release;
 };
 
 &sk {
@@ -133,91 +135,90 @@
         };
     };
 
-    behaviors {
-        hm_l: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_L";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
-        };
-
-        hm_r: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_R";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
-        };
-
-        sr: shift_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_LAYER";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&to>;
-
-            retro-tap;
-        };
-
-        hl_l: homerow_layers_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS_L";
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-
-            hold-trigger-key-positions = <3 4 5 10 11 12 13 14>; // right hand
-        };
-
-        hl_r: homerow_layers_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_LAYERS_R";
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 6 7 8 9>; // left hand
-        };
-
-        td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        alpha2macro: behavior_macro_1 {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO1";
-            #binding-cells = <0>;
-            bindings = <&sl AL2>;
-        };
-
-        caps_alpha2macro: behavior_macro_2 {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO2";
-            #binding-cells = <0>;
-            bindings = <&sl AL2U>;
-        };
+   behaviors {
+    hm_l: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_L";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <10 11 12 13 14 15 16>;
     };
+
+    hm_r: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_R";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <0 1 2 3 4 5 6>;
+    };
+
+    sr: shift_layer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "SHIFT_LAYER";
+        #binding-cells = <2>;
+        tapping-term-ms = <300>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&to>;
+        retro-tap;
+    };
+
+    hl_l: homerow_layers_left {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_LAYERS_L";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        bindings = <&mo>, <&kp>;
+        hold-trigger-key-positions = <10 11 12 13 14 15 16>;
+    };
+
+    hl_r: homerow_layers_right {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_LAYERS_R";
+        #binding-cells = <2>;
+        tapping-term-ms = <280>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        bindings = <&mo>, <&kp>;
+        hold-trigger-key-positions = <0 1 2 3 4 5 6>;
+    };
+
+    td: tapdance {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TAPDANCE";
+        #binding-cells = <2>;
+        tapping-term-ms = <190>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+
+    alpha2macro: behavior_macro_1 {
+        compatible = "zmk,behavior-macro";
+        label = "MACRO1";
+        #binding-cells = <0>;
+        bindings = <&sl AL2>;
+    };
+
+    caps_alpha2macro: behavior_macro_2 {
+        compatible = "zmk,behavior-macro";
+        label = "MACRO2";
+        #binding-cells = <0>;
+        bindings = <&sl AL2U>;
+    };
+};
+
 
     //			00	01	02			03	04	05
     //		06	07	08	09			10	11	12	13
