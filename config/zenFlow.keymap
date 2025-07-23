@@ -185,12 +185,12 @@
 
         space_shift: shift_space {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp SPACE>, <&kp LSHIFT>;
+            bindings = <&kp SPACE &kp LSHIFT>;
         };
 
         alpha2macro: behavior_macro_1 {
