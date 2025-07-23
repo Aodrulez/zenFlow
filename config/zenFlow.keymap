@@ -138,9 +138,8 @@
    behaviors {
     hm_l: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_L";
         #binding-cells = <2>;
-        tapping-term-ms = <220>;
+        tapping-term-ms = <280>;
         flavor = "balanced";
         require-prior-idle-ms = <150>;
         hold-trigger-on-release;
@@ -150,9 +149,8 @@
 
     hm_r: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_R";
         #binding-cells = <2>;
-        tapping-term-ms = <220>;
+        tapping-term-ms = <280>;
         flavor = "balanced";
         require-prior-idle-ms = <150>;
         hold-trigger-on-release;
@@ -162,18 +160,16 @@
 
     sr: shift_layer {
         compatible = "zmk,behavior-hold-tap";
-        label = "SHIFT_LAYER";
         #binding-cells = <2>;
-        tapping-term-ms = <220>;
-        quick_tap_ms = <0>;
-        flavor = "tap-preferred";
+        tapping-term-ms = <280>;
+        flavor = "balanced";
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
         bindings = <&kp>, <&to>;
-        retro-tap;
     };
 
     hl_l: homerow_layers_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_LAYERS_L";
         #binding-cells = <2>;
         tapping-term-ms = <220>;
         flavor = "balanced";
@@ -182,10 +178,9 @@
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <10 11 12 13 14 15 16>;
     };
-
+    
     hl_r: homerow_layers_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_LAYERS_R";
         #binding-cells = <2>;
         tapping-term-ms = <220>;
         flavor = "balanced";
@@ -220,9 +215,8 @@
 
     space_shift: shift_space {
         compatible = "zmk,behavior-hold-tap";
-        label = "SHIFT_SPACE";
         #binding-cells = <0>;
-        tapping-term-ms = <220>;
+        tapping-term-ms = <280>;
         flavor = "balanced";
         require-prior-idle-ms = <150>;
         hold-trigger-on-release;
